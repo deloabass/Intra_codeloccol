@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Calculator App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bod">
+    <div class="container">
+      <div class="title">
+        <div class="taggle">
+        <h3 id="titre_h3">Calculator</h3>
+          <p class="type_1">1</p>
+          <p class="type_2">2</p>
+          <p class="type_3">3</p>
+        </div>
+        <div class="circle">
+          <div class="point"></div>
+          <div class="point2"></div>
+          <div class="point3"></div>
+        </div>
+        <div class="control">
+          <p id="theme">Theme</p>
+        </div>
+      </div>
+      <div class="screen">
+          <input type="text" name="Calculator" readonly id="screen" />
+      </div>
+      <div class="col-body">
+        <div class="btn">
+          <button class="number num" onclick="" nombre="7">7</button>
+          <button class="number" nombre="8">8</button>
+          <button class="number" nombre="9">9</button>
+          <button onclick="del()" class="del">DEL</button>
+          <button class="number" nombre="4">4</button>
+          <button class="number" nombre="5">5</button>
+          <button class="number" nombre="6">6</button>
+          <button id="multiplication" class="symbole" onclick="ajouterOperateur('+')" symbol="+">+</button>
+          <button class="number" nombre="1">1</button>
+          <button class="number" nombre="2">2</button>
+          <button class="number" nombre="3">3</button>
+          <button class="symbole" value="-" symbol="-">-</button>
+          <button class="symbole" id="boutonpoint">.</button>
+          <button class="number" nombre="0">0</button>
+          <button class="symbole" id="division" symbol="÷">÷</button>
+          <button class="symbole" symbol="x">x</button>
+          <button class="reset" onclick="reset()">RESET</button>
+          <button class="egale" onclick="egale()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

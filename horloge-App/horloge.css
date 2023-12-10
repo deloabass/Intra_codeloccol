@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair' sans-serif;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(240, 240, 241);
+}
+
+.container {
+    position: relative;
+    background: #2f363e;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+}
+.clock {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: rgb(47, 54, 62);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 30px;
+}
+.clock::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #2f363e;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    z-index: 10000;
+    display: block;
+
+}
+
+.clock::after {
+    display: block;
+    content: '';
+    text-align: center;
+    justify-content: center;
+}
+
+.clock span {
+    position: absolute;
+    inset: 20px;
+    color: grey;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+    cursor: pointer;
+    
+}
+.clock span b {
+    font-size: 1em;
+    opacity: 2;
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i)));
+
+}
+
+.circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+}
+
+.circle i {
+    position: absolute;
+    width: 4px;
+    height: 50%;
+    background: var(--clr);
+    opacity: 0.75;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+
+
+}
+
+.circle:nth-child(1) i {
+    width: 2px;
+    margin-top: 20px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    
+
+}
+
+.circle:nth-child(2) i {
+    width: 3px;
+    margin-top: 9px;
+    border-bottom-right-radius: 1100px;
+    border-bottom-left-radius: 1100px;
+}
+
+.circle2 {
+    width: 240px;
+    height: 240px;
+
+
+}
+
+.circle3 {
+    width: 180px;
+    height: 180px;
+    z-index: 8;
+}
+
+.circle::before {
+    content: '';
+    top: -8.5px;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--clr);
+    box-shadow: 0 0 2px var(--clr), 0 0 10px var(--clr);
+}
+@media (max-width:375px) {
+    .clock {
+            width: 200px;
+            height: 200px;
+    }
+    
+}
