@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous" />   
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ninetec</title>
+    <link rel="stylesheet" href="Styles/global.css">
+    <link rel="stylesheet" href="Styles/hebergement.css">
+</head>
+
+<body>
+    <!-- =================navbar=================== -->
+    <div id="NAV">
+        <nav class="navbar topnav fixed-top navbar-expand-lg transparent border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img width="100" height="35" src="Images/ninetec.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <div class="d-flex flex-column w-100">
+                        <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active border-start" aria-current="page"
+                                    href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="support.html">Support</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link border-start" aria-current="page" href="login.html">
+                                    Login
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav me-md-auto mb-2 mb-lg-0 justify-content-md-between">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">
+                                    <i class="fa-solid fa-house"></i>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="about.html">About</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="features.html">Features</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="#">Client espace</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="carriere.html">Carriere</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- =================navbar=================== -->
+    <section class="reseauSociaux">
+        <div class="container social">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook fa-beat fa-2xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter fa-beat fa-2xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin-in fa-beat fa-2xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram fa-beat fa-2xl"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="baniere mb-5">
+        <div class="hero">
+            <div class="content">
+                <h4>Services</h4>
+                <h4>Détails</h4>
+                <div class="newltter">
+                    <div class="progress"></div><br>
+                    <div class="pages">
+                        <a href="">Home</a><span> -</span>
+                        <a href="services.html">
+                            <h6>Service Détails </h6>
+                        </a>
+                        <a href="#">
+                            <h6>Hebergement </h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!--Main-->
+
+<!-- ===== card avantage ===== -->
+
+<section class="avantage">
+    <div class="progress progressCenter mt-5"></div><br>
+    <div class="row mb-5">
+        <div class="col-12  col-md-6 col-lg-3">
+            <div class="d-flex justify-content-center w-100">
+                <div class="topCard d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-minimize fa-2xl"></i>
+                </div>
+            </div>
+            <div class="card NosServicesCard">
+                <div class="card-body text-center mt-5">
+                    <h3 class="card-title h-25">Facile à utiliser</h3>
+                    <p class="card-text text-justify">Facile à utiliser, dessinez de manière transparente des
+                        idées longues et percutantes sur le tableau blanc.</p>
+                </div>
+                <div class="d-flex justify-content-center mb-2 w-100">
+                    <div class="seemore d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-check fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12  col-md-6 col-lg-3">
+            <div class="d-flex justify-content-center w-100">
+                <div class="topCard d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fs-1 fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="card NosServicesCard">
+                <div class="card-body text-center mt-5">
+                    <h3 class="card-title h-25">Optimisé pour le SEO</h3>
+                    <p class="card-text text-justify">Optimisé pour le référencement (SEO), illustrez de manière
+                        fluide des idées percutantes et de grande envergure sur le tableau blanc.</p>
+                </div>
+                <div class="d-flex justify-content-center mb-2 w-100">
+                    <div class="seemore d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-check fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12  col-md-6 col-lg-3">
+            <div class="d-flex justify-content-center w-100">
+                <div class="topCard d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-money-bill-trend-up fa-2xl"></i>
+                </div>
+            </div>
+            <div class="card NosServicesCard">
+                <div class="card-body text-center mt-5">
+                    <h3 class="card-title h-25">Meilleur Tarification</h3>
+                    <p class="card-text text-justify">Dessinez de manière transparente des idées longues et
+                        percutantes sur le tableau blanc.</p>
+                </div>
+                <div class="d-flex justify-content-center mb-2 w-100">
+                    <div class="seemore d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-check fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12  col-md-6 col-lg-3">
+            <div class="d-flex justify-content-center w-100">
+                <div class="topCard d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-desktop fa-2xl"></i>
+                </div>
+            </div>
+            <div class="card NosServicesCard">
+                <div class="card-body text-center mt-5">
+                    <h3 class="card-title h-25">Support dédié</h3>
+                    <p class="card-text text-justify">Dessinez de manière transparente des idées longues et
+                        percutantes sur le tableau blanc.</p>
+                </div>
+                <div class="d-flex justify-content-center mb-2 w-100">
+                    <div class="seemore d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-check fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section id="hebergement" class="mt-5">
+    <div class="progress progressCenter mt-5"></div><br>
+
+    <div class="container">
+        <div class="row">
+           <div class="title my-5"> <h1>Choisissez votre pack d'hébergement Web</h1></div>
+            <p id="sousTitre">Consultez nos packs ci-dessous et découvrez notre pack d'entrée de gamme
+                <a href="#">ici.</a>
+            </p>
+            <p id="sousTitre2">Le prix des boîtes email indiqué est uniquement valable pour les nouveaux clients.
+            </p>
+            <!-- =================== Card1 ================ -->
+
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="stand d-flex justify-content-center w-100">
+                    <div>
+                        <div class="offer-title">
+                            <h2>Standard</h2>
+                        </div>
+                        <div class="offer-description">
+                            <p>
+                                Hébergement économique avec toutes les fonctions dont vous avez besoin pour vous
+                                lancer.
+                            </p>
+                        </div>
+                        <div class="offer-price">
+                            <p style="text-decoration: line-through;">3000 FCFA HT/mois</p>
+                            <p>
+                                <span>2460</span>
+                                <sup>FCFA</sup>
+                            </p>
+                            <p>
+                                (2700 FCFA TTC)
+                            </p>
+                            <p>
+                                pendant 6 mois
+                            </p>
+                        </div>
+                        <div class="order">
+                            <button type="button" id="btnContinuer">Continuer</button>
+                        </div>
+                        <!-- Délire de Richouf -->
+                        <div class="offer-price">
+                            <div class="select">
+
+                                <div id="selected">
+                                    Abonnement <i class="bi bi-chevron-down"></i>
+                                </div>
+                                <div class="option">
+                                    <p>3000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>2300</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (2560 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+                                <div class="option">
+                                    <p>3000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>3</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (10.60 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+                                <div class="option">
+                                    <p>3000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>3</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (10.60 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Délire de Richouf -->
+
+                        <div class="offer-advantage">
+                            <ul class="product-list">
+                                <li>
+                                    <span class="product-name col-lg-10 col-lg-10">100 Go de stockage
+                                        redondant</span>
+                                    <span
+                                        class="product-icon col-lg-2 d-flex flex-row-reverse pt-4 col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">6 Go de RAM, 1 vCPU</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">10 bases de données</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Bande passante illimitée</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Installation de WordPress en 1 clic</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Domaine et Certificat SSL inclus</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Adresse email<br>professionnelle</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Assistance 24/7</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =================== Card1 ================ -->
+              
+             <!-- =================== Card2 ================ -->
+
+             <div class="col-lg-3 col-md-3 col-sm-6 ">
+                <div class="stand d-flex justify-content-center w-100 host-active">
+                    <div>
+                        <div class="offer-title">
+                            <h2>Plus</h2>
+                        </div>
+                        <div class="offer-description">
+                            <p>
+                                Deux fois plus de stockage et de ressources supplémentaires pour des sites Web professionnels.
+                            </p>
+                        </div>
+                        <div class="offer-price">
+                            <p style="text-decoration: line-through;">6000 FCFA HT/mois</p>
+                            <p>
+                                <span>4320</span>
+                                <sup>FCFA</sup>
+                            </p>
+                            <p>
+                                ( 4700 FCFA TTC)
+                            </p>
+                            <p>
+                                pendant 6 mois
+                            </p>
+                        </div>
+                        <div class="order">
+                            <button type="button" id="btnContinuer">Continuer</button>
+                        </div>
+                        <!-- Délire de Richouf -->
+                        <div class="offer-price">
+                            <div class="select">
+
+                                <div id="selected">
+                                    Abonnement <i class="bi bi-chevron-down"></i>
+
+                                </div>
+                                <div class="option">
+                                    <p>6000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>8</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (10.60 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+                                <div class="option">
+                                    <p>3000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>3</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (10.60 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+                                <div class="option">
+                                    <p>3000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>3</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (10.60 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Délire de Richouf -->
+
+                        <div class="offer-advantage">
+                            <ul class="product-list">
+                                <li>
+                                    <span class="product-name col-lg-10 col-lg-10">250 Go de stockage
+                                        redondant</span>
+                                    <span
+                                        class="product-icon col-lg-2 d-flex flex-row-reverse pt-4 col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">9 Go de RAM, 1 vCPU</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">250 bases de données</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Bande passante illimitée</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Installation de WordPress en 1 clic</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Domaine et Certificat SSL inclus</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Adresse email<br>professionnelle</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Assistance 24/7</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =================== Card2 ================ -->
+
+             <!-- =================== Card3 ================ -->
+
+             <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="stand d-flex justify-content-center w-100">
+                    <div>
+                        <div class="offer-title">
+                            <h2>Premium</h2>
+                        </div>
+                        <div class="offer-description">
+                            <p>
+                                Plus de puissance et de stockage pour vos sites Web de grande envergure.
+                            </p>
+                        </div>
+                        <div class="offer-price">
+                            <p style="text-decoration: line-through;">9000 FCFA HT/mois</p>
+                            <p>
+                                <span>12</span>
+                                <sup>FCFA</sup>
+                            </p>
+                            <p>
+                                (20.60 FCFA TTC)
+                            </p>
+                            <p>
+                                pendant 6 mois
+                            </p>
+                        </div>
+                        <div class="order">
+                            <button type="button" id="btnContinuer">Continuer</button>
+                        </div>
+                        <!-- Délire de Richouf -->
+                        <div class="offer-price">
+                            <div class="select">
+
+                                <div id="selected">
+                                    Abonnement <i class="bi bi-chevron-down"></i>
+                                </div>
+                                <div class="option">
+                                    <p>3000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>3</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (10.60 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+                                <div class="option">
+                                    <p>3000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>3</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (10.60 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+                                <div class="option">
+                                    <p>3000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>3</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (10.60 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Délire de Richouf -->
+
+                        <div class="offer-advantage">
+                            <ul class="product-list">
+                                <li>
+                                    <span class="product-name col-lg-10 col-lg-10">350 Go de stockage
+                                        redondant</span>
+                                    <span
+                                        class="product-icon col-lg-2 d-flex flex-row-reverse pt-4 col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">15 Go de RAM, 1 vCPU</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">350 bases de données</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Bande passante illimitée</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Installation de WordPress en 1 clic</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Domaine et Certificat SSL inclus</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Adresse email<br>professionnelle</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Assistance 24/7</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">WebStat Plus</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =================== Card3 ================ -->
+
+             <!-- =================== Card4 ================ -->
+
+             <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="stand d-flex justify-content-center w-100">
+                    <div>
+                        <div class="offer-title">
+                            <h2>Ultimate</h2>
+                        </div>
+                        <div class="offer-description">
+                            <p>
+                                Des performance maximales pour de nombreux projets Web et des boutiques en ligne à trafic élevé .
+                            </p>
+                        </div>
+                        <div class="offer-price">
+                            <p style="text-decoration: line-through;">10000 FCFA HT/mois</p>
+                            <p>
+                                <span>15</span>
+                                <sup>FCFA</sup>
+                            </p>
+                            <p>
+                                (20.60 FCFA TTC)
+                            </p>
+                            <p>
+                                pendant 6 mois
+                            </p>
+                        </div>
+                        <div class="order">
+                            <button type="button" id="btnContinuer">Continuer</button>
+                        </div>
+                        <!-- Délire de Richouf -->
+                        <div class="offer-price">
+                            <div class="select">
+
+                                <div id="selected">
+                                    Abonnement <i class="bi bi-chevron-down"></i>   
+                                </div>
+                                <div class="option">
+                                    <p>3000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>3</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (10.60 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+                                <div class="option">
+                                    <p>3000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>3</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (10.60 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+                                <div class="option">
+                                    <p>3000 FCFA HT/mois</p>
+                                    <p>
+                                        <span>3</span>
+                                        <sup>FCFA</sup>
+                                    </p>
+                                    <p>
+                                        (10.60 FCFA TTC)
+                                    </p>
+                                    <p>
+                                        pendant 6 mois
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Délire de Richouf -->
+
+                        <div class="offer-advantage">
+                            <ul class="product-list">
+                                <li>
+                                    <span class="product-name col-lg-10 col-lg-10">500 Go de stockage
+                                        redondant</span>
+                                    <span
+                                        class="product-icon col-lg-2 d-flex flex-row-reverse pt-4 col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">20 Go de RAM, 1 vCPU</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">500 bases de données</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Bande passante illimitée</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Installation de WordPress en 1 clic</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Domaine inclus et SSL</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Adresse email professionnelle</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Assistance 24/7</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">WebStat Plus</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                                <li>
+                                    <span class="product-name col-lg-10">Certificat SSL illimités</span>
+                                    <span class="product-icon col-lg-2 d-flex flex-row-reverse pt-4"><i
+                                            class="fas fa-info-circle"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =================== Card4 ================ -->
+
+
+
+
+
+        </div>
+    </section>
+
+<!-- ===== card avantage ===== -->
+
+ <!--Main-->
+    <!-- =============== Footer ============== -->
+    <footer class="fixed-bottom">
+        <div class="footer-list ">
+            <ul class=" d-flex  mb-2 mb-lg-0 justify-content-md-between">
+                <li class="link">
+                    <a class="text-decoration-none" aria-current="page" href="#"> Home</a>
+                </li>
+                <li class="link">
+                    <a class="text-decoration-none" aria-current="page" href="#">About</a>
+                </li>
+                <li class="link">
+                    <a class="text-decoration-none" aria-current="page" href="#">Features</a>
+                </li>
+                <li class="link">
+                    <a class="text-decoration-none" aria-current="page" href="#">Client espace</a>
+                </li>
+                <li class="link">
+                    <a class="text-decoration-none" aria-current="page" href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p class="text-center">© Copyright 2024 - Ninetec Tout Droit Réservé</p>
+        </div>
+    </footer>
+    <!-- =============== Footer ============== -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="Script/index.js"></script>
+    <script src="Script/hebergement.js"></script>
+</body>
+
+</html>

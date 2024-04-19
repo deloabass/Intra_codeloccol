@@ -1,0 +1,79 @@
+.carriereSec{
+    margin-top: 8rem;
+    margin-bottom: 7%;
+}
+.contener{
+    display: flex;    
+    justify-content: space-around;
+    background-color: rgba(92, 153, 245, 0.856);
+    padding: 10px;
+}
+.carriere{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    top: 10rem;
+}
+.image-carriere{
+    width: 30%;
+    height: 100%;
+}
+.div-img{
+    object-fit: cover;
+    width: 25rem;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.nos-carriere{
+    display: flex;   
+    flex-direction: column;
+    background-color: rgb(6, 42, 97);
+    color: #fff;
+    padding: 10px;
+}
+
+.btn-carrire:hover{
+    background-color: rgba(92, 153, 245, 0.856);
+    color:#fff;  
+}
+
+h4{
+    display: flex;
+    text-align: center;
+    align-items: center;
+   justify-content: center;
+}
+.btn1 , .btn-carrire{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    background-color: rgba(92, 153, 245, 0.856);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: rgb(6, 42, 97);
+    font-size: 2rem;
+    width: 300px;
+    
+}
+.btn1:hover{
+    background-color: rgb(6, 42, 97);
+    color: #fff;
+}
+ul{
+    text-decoration: none;
+}
+.button-rejoin{
+    display: flex;
+    text-align: center;
+    align-items: center;
+   justify-content: center;
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+}
+.nos-carriere p{
+    padding: 5px;
+    font-size: large;
+}

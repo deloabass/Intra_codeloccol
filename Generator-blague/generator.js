@@ -8,9 +8,10 @@ function randomInteger(min, max) {
   let rand = min - 0.5 + Math.random() * (max - min + 1);
   return Math.round(rand);
 }
+
+
 const jete_gete = document.querySelector(".btn");
 const quote = document.getElementById("quote");
-jete_gete.addEventListener('MOUSE', function () {
+jete_gete.addEventListener('click', function () {
   quote.textContent = citations[randomInteger(0, citations.length - 1)];
 });
-console.log('randomInteger', jete_gete);

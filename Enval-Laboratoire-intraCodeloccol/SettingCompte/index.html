@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css" integrity="sha512-yU7+yXTc4VUanLSjkZq+buQN3afNA4j2ap/mxvdr440P5aW9np9vIr2JMZ2E5DuYeC9bAoH9CuCR7SJlXAa4pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      
+</head>
+<body>
+      <div class="position-fixed z-1 top-0 start-0 bg-light col-2">
+        <i class="bi bi-list col-12 fs-3 text-secondary d-block d-lg-none" role="button"  onclick="openSidebar()"></i> 
+      </div>
+
+
+
+     <div class="d-flex justify-content-center h-auto contenu">
+         <div class="container-fluid col-2 bg-white bardroite open">
+            <div>
+            <div class="te">
+                <img class="d-none d-lg-inline w-100" src="enval_transparent.png" alt="">
+              </div>
+            <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link text-black-50" aria-current="page" href="/dashboard/dashboard.html">
+                    <i class="bi bi-grid"></i>
+                     <span class="d-none d-lg-inline">Dashboard</span> 
+                    </a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" active href="/Facture/index.html">
+                    <i class="bi bi-person-circle"></i> 
+                    <span class="d-none d-lg-inline">Facture</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50 " href="/commande/index.html">
+                    <i class="bi bi-car-front"></i>
+                    <span class="d-none d-lg-inline">commande</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="/Suivi/index.html">
+                    <i class="bi bi-bag"></i>
+                    <span class="d-none d-lg-inline">Suivi </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="/serviceClient/index.html">
+                    <i class="bi bi-chat-text"></i>
+                   <span class="d-none d-lg-inline">Service Client </span>
+                </a>
+              </li>
+              <div class="u">
+            
+               <li class="nav-item">
+                 <a class="text-black-50 mt-5 text-nowrap ddd" href="/SettingCompte/index.html" style="background-color:#e7f9fd; border-radius: 5px;">
+                    <i class="bi bi-gear"></i>
+                    <span class="d-none d-lg-inline">Paramètre Compte</span>
+                 </a>
+               </li>
+          
+            <div class="re mt-3">
+              <li class="nav-item">
+                <a class="text-black-50 ddd " href="/connexion/connexion.html">
+                    <i class="bi bi-box-arrow-left"></i>
+                   <span class="d-none d-lg-inline"> Déconnexion</span>
+                </a>
+              </li>
+            </div>
+            </div> 
+              </div>
+         </div>
+
+          <div class="container-fluid">
+            <nav1 class="navbar mx-auto w-100 - bg-light p-5 d-flex justify-content-center align-items-center">
+              <div class="container col-12">
+            <div class="position-absolute top-0 end-0 mt-2  navbarImg">
+               <i class="bi bi-bell p-3 fs-3 text-secondary" role="button"></i>
+                 <img src="profile.png" class="myPhoto" alt="">
+                </div>
+            </div>
+
+         </nav1>
+    
+
+
+
+
+            <div class="p-3 mx-auto rounded bg-white w-100 mt-4 col-12 col-md-12 col-sm-4 shadow-lg h-auto">
+                <div class="col-md-3 col-lg-3 rounded position-absolute top-25 end-0 border border-1" id="notification">
+                  <p class="p-1 text-light text-center fs-5 bgConnexion">Connexion</p>
+                  <div class="text-center">
+                    <p style="font-size: 17px;" id="para"></p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                      <h4>Paramétre du compte</h4>
+                  </div>
+
+                
+                  <div class="col-md-12 mt-5">
+                  <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <div class="">                      
+                        <span class="fs-5 text-info-emphasis " onclick="returnDash()">
+                          <i class="bi bi-arrow-left"></i>
+                          <a href="" class="text-info-emphasis">Retour au baleau de bord</a>
+                        </span>               
+                      </div>
+                    </div>
+                    <div class="col-sm-1 mb-2 flex-fill">
+                      <div class="card">                
+                        <button class="p-2 rounded Modifier text-nowrap" id="btnModifier">Midifier  le mot de passe</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-1 mb-2 flex-fill">
+                      <div class="card">                
+                        <button class="p-2 rounded Supprimer text-nowrap" onclick="deleteCompte()">Supprimer le compte</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+
+                  <div class="row gap-5">
+                    <div class="col-sm-8 mb-3 mb-sm-0 mt-3 mt-5">
+                        <p class="fs-5">Modifier le profil</p>
+                       <form>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3 mb-3 mb-sm-0 position-fixed top-50 start-50 translate-middle classenone" id="form" class="active">
+                              <div class="card middle" >
+                                  <div class="card-header text-center  fs-5 text-light">
+                                    <strong>Modifier le mot de passe </strong>
+                                    <strong class="position-absolute me-4 end-0" role="button"><i class="bi bi-x-lg" onclick="closeIcon()"></i></strong>
+                                  </div>
+                                <div class="card-body">
+                              <form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Ancien mot de passe</label>
+                                  <input type="text" class="form-control" id="exampleInputEmail2">
+                                  
+                                </div><br>
+                                <div class="mb-3">
+                                  <label class="form-label">Nouveau mot de passe</label>
+                                  <input type="text" class="form-control" id="Nouveau">
+                                </div><br>
+                                <div class="mb-3">
+                                  <label class="form-label">Conformation</label>
+                                  <input type="text" class="form-control" id ="Confirmer">
+                                </div><br><br>
+                                <div class="mt-3">                           
+                                  <button type="submit" class="submit valider-pswd rounded p-1 col-12">Envoyer</button>
+                                </div>                                
+                              </form>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                          <div class="mb-3">
+                            
+                            <label for="exampleInputEmail2" class="form-label text-info-emphasis">Nom</label>
+                            <input type="text" class="form-control bg-secondary bg-opacity-25 text-info-emphasis" aria-describedby="emailHelp" id="inputName">
+                          </div><br><br>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail2" class="form-label text-info-emphasis">Email</label>
+                            <input type="email" class="form-control bg-secondary bg-opacity-25 text-info-emphasis" aria-describedby="emailHelp" id="inputEmail">
+                          </div><br><br><br>
+                            <label class="form-label text-info-emphasis">Biographie</label>
+                       <div class="row">
+                            <textarea name="Biographie" id="inputBiographie" class="p-2 text-info-emphasis bg-secondary bg-opacity-25" cols="" rows="10"></textarea>
+                            <button type="submit" class="submit rounded p-1 col-12" onclick="btnBiographie()">Envoyer</button>
+                        </div> 
+                         <br>
+                           
+                    
+                        </form>
+                    </div>
+                    <div class="col-sm-3 mb-3 mb-sm-0 mt-3 mt-sm-5">
+                      <p class="fs-5">Ton Avatar</p>
+                       <div class="image d-flex bg-transparent justify-content-center align-items-center">
+                        <!-- <i class="bi bi-person-circle"></i> -->
+                        <img src="profile.png" class="photoProfile w-100 h-100" alt="">
+                        
+                      </div><br><br><br>
+                      <div class="d-grid gap-2 btnImg">
+                        <input type="file" hidden="hidden"  id="filder">
+                        <button type="button" class="p-2 rounded modifieree">Modifier la photo</button>
+                        <button type="button" class="p-2 rounded photo" onclick="clearPhoto()">Supprimer la photo</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+        <script src="appcompte.js"></script>  
+</body>
+</html> 

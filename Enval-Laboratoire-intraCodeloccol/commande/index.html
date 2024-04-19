@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css" integrity="sha512-yU7+yXTc4VUanLSjkZq+buQN3afNA4j2ap/mxvdr440P5aW9np9vIr2JMZ2E5DuYeC9bAoH9CuCR7SJlXAa4pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+</head>
+<body>
+       <div class="position-fixed z-1 top-0 start-0 bg-light col-2">
+        <i class="bi bi-list col-12 fs-3 text-secondary d-block d-lg-none" role="button"  onclick="openSidebar()"></i> 
+      </div>
+       <div class="d-flex justify-content-center  contenu">
+         <div class="container-fluid col-2 bg-white bardroite col-1 open">
+            <div>
+            <div class="te">
+                <img class="d-none d-lg-inline w-100" src="enval_transparent.png" alt="">
+              </div>
+            <ul class="nav flex-column">
+                  <li class="nav-item text-nowrap">
+                    <a class="nav-link text-black-50" aria-current="page" href="/dashboard/dashboard.html">
+                    <i class="bi bi-grid"></i>
+                     <span class="d-none d-lg-inline">Dashboard</span> 
+                    </a>
+                  </li>
+              <li class="nav-item text-nowrap">
+                <a class="nav-link text-black-50" active href="/Facture/index.html">
+                    <i class="bi bi-person-circle"></i> 
+                    <span class="d-none d-lg-inline">Facture</span>
+                </a>
+              </li>
+              <li class="nav-item text-nowrap">
+                <a style="background-color:#e7f9fd; border-radius: 5px;" class="nav-link text-black-50 " href="/commande/index.html">
+                    <i class="bi bi-car-front"></i>
+                    <span class="d-none d-lg-inline">commande</span>
+                </a>
+              </li>
+              <li class="nav-item text-nowrap">
+                <a class="nav-link text-black-50" href="/Suivi/index.html">
+                    <i class="bi bi-bag"></i>
+                    <span class="d-none d-lg-inline">Suivi </span>
+                </a>
+              </li>
+              <li class="nav-item text-nowrap">
+                <a class="nav-link text-black-50" href="/serviceClient/index.html">
+                    <i class="bi bi-chat-text"></i>
+                   <span class="d-none d-lg-inline">Service Client </span>
+                </a>
+              </li>
+              <div class="u">
+            
+               <li class="nav-item text-nowrap">
+                 <a class="text-black-50 mt-5 ddd" href="/SettingCompte/index.html">
+                    <i class="bi bi-gear"></i>
+                    <span class="d-none d-lg-inline">Paramètre Compte</span>
+                 </a>
+               </li>
+          
+            <div class="re mt-3">
+              <li class="nav-item text-nowrap">
+                <a class="text-black-50 ddd " href="/connexion/connexion.html">
+                    <i class="bi bi-box-arrow-left"></i>
+                   <span class="d-none d-lg-inline"> Déconnexion</span>
+                </a>
+              </li>
+            </div>
+            </div> 
+              </div>
+         </div>
+          <div class="container-fluid">
+            <nav1 class="navbar - bg-light p-5 d-flex justify-content-center align-items-center">
+              <div class="container col-12">
+            <div class="position-absolute top-0 end-0 mt-2  navbarImg">
+               <i class="bi bi-bell p-3 fs-3 text-secondary" role="button"></i>
+                 <img src="/SettingCompte/profile.png" class="myPhoto" alt="">
+                </div>
+            </div>
+
+         </nav1>
+            <div class="p-3 rounded bg-white mt-4 col-12 col-md-12 col-sm-4 shadow-lg tableHeig" style="overflow-y: scroll;">
+              <hr>
+                <div class="col-12">
+                  <div class="row">
+                     <div class="col-md-9">
+                      <h1>Commande</h1>
+                     </div>
+                     <div class="col-md-3">
+                        <!-- Name input -->
+                      <div class="form-outline mb-4 border border-2 rounded">
+                         <div class="input-group shadow-lg">
+                          <span class="p-1 fs-5 d-flex justify-content-center align-items-center bg-transparent"><i class="bi bi-search"></i></span>
+                          <input type="search" class="form-control text-primary d-flex justify-content-center align-items-center inputSearch" spellcheck="true">
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-12 col-sm-6">
+                    <div class="row" style="overflow: scroll;">
+                      <table class="table">
+                        <thead>
+                          <tr class="col-md-4">
+                            <th scope="col" class="text-center facture fs-4" role="button" style="width: 270px;"><strong class="facturIcon">Commande</strong></th>
+                            <th scope="col" class="text-center facture fs-4" role="button" style="width: 270px;"><strong class="laboraIcon">Laboratoire</strong></th>
+                            <th scope="col" class="text-center facture fs-4" role="button" style="width: 270px;"><strong class="dateIcon">Date</strong></th>
+                            <th scope="col" class="text-center facture fs-4" role="button" style="width: 270px;"><strong class="statutIcon">Statut</strong></th>
+                            <th scope="col" class="text-center facture fs-4 text-nowrap" role="button" style="width: 270px;"><strong>Cliquez pour voir le rapport</strong></th>
+                          </tr>
+                        </thead>
+                        <tbody class="container mx-auto tbody">
+                          <tr class="special-row"> 
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">000001</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">Enval</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">10/03/2023</td>
+                              <td scope="col" class="text-center text-danger fs-5 border border-end-2">En cours</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2"><button class="ps-5 pe-5 border rounded buttone">Voir</button></td>
+                          </tr>
+                            <tr class="special-row">
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">000002</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">Codeloccol</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">10/03/2023</td>
+                              <td scope="col" class="text-center text-danger fs-5 border border-end-2">En cours</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2"><button class="ps-5 pe-5 border rounded buttone">Voir</button></td>
+                            </tr>
+                            <tr class="special-row">
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">000003</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">Sadoré</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">10/03/2023</td>
+                              <td scope="col" class="text-center text-info-emphasis fs-5 border border-end-2">Terminée</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2"><button class="ps-5 pe-5 border rounded buttone">Voir</button></td>
+                            </tr>
+                            <tr class="special-row">
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">000004</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">ANSI</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">12/03/2023</td>
+                              <td scope="col" class="text-center text-danger fs-5 border border-end-2">En cours</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2"><button class="ps-5 pe-5 border rounded buttone">Voir</button></td>
+                            </tr>
+                            <tr class="special-row">
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">000005</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">CIPMEN</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">12/03/2023</td>
+                              <td scope="col" class="text-center text-info-emphasis fs-5 border border-end-2">Terminée</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2"><button class="ps-5 pe-5 border rounded buttone">Voir</button></td>
+                            </tr>
+                            <tr class="special-row">
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">000006</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">ADU</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">13/03/2023</td>
+                              <td scope="col" class="text-center text-info-emphasis fs-5 border border-end-2">En cours</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2"><button class="ps-5 pe-5 border rounded buttone">Voir</button></td>
+                            </tr>
+                            <tr class="special-row">
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">000007</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">Codeloccol</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">14/03/2023</td>
+                              <td scope="col" class="text-center text-info-emphasis fs-5 border border-end-2">Terminée</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2"><button class="ps-5 pe-5 border rounded buttone">Voir</button></td>
+                            </tr>
+                            <tr class="special-row">
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">000008</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">Enval</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">14/03/2023</td>
+                              <td scope="col" class="text-center text-danger fs-5 border border-end-2">En cours</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2"><button class="ps-5 pe-5 border rounded buttone">Voir</button></td>
+                            </tr>
+                            <tr class="special-row">
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">000009</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">ANSI</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">16/03/2023</td>
+                              <td scope="col" class="text-center text-danger fs-5 border border-end-2">En cours</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2"><button class="ps-5 pe-5 border rounded buttone">Voir</button></td>
+                            </tr>
+                            <tr class="special-row">
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">000010</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">ADU</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2">18/03/2023</td>
+                              <td scope="col" class="text-center text-info-emphasis fs-5 border border-end-2">Terminée</td>
+                              <td scope="col" class="text-center text-black-50 fs-5 border border-end-2"><button class="ps-5 pe-5 border rounded buttone">Voir</button></td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-10 text-center" id="no-match-paragraph">
+                      <!-- Paragraphe pour afficher "Aucune donnée à afficher"-->
+                        <p class=" mx-auto btn btn-succes text-primary">Aucune donnée à afficher.</p>
+                  </div>
+                </div>
+            </div>
+            </div>
+            </div>  
+        <script src="app.js"></script>  
+</body>
+</html> 

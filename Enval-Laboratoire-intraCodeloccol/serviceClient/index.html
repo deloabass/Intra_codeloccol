@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css" integrity="sha512-yU7+yXTc4VUanLSjkZq+buQN3afNA4j2ap/mxvdr440P5aW9np9vIr2JMZ2E5DuYeC9bAoH9CuCR7SJlXAa4pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+</head>
+<body>
+      <div class="position-fixed z-1 top-0 start-0 bg-light col-2">
+        <i class="bi bi-list col-12 fs-3 text-secondary d-block d-lg-none" role="button"  onclick="openSidebar()"></i> 
+      </div>
+
+
+
+     <div class=" d-flex justify-content-center">
+         <div class="container-fluid col-2 bg-white bardroite col-1 open">
+            <div class="sidebar">
+            <div class="te">
+                <img class="d-none d-lg-inline w-100" src="/commande/enval_transparent.png" alt="">
+              </div>
+            <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link text-black-50" aria-current="page" href="/dashboard/dashboard.html">
+                    <i class="bi bi-grid"></i>
+                     <span class="d-none d-lg-inline">Dashboard</span> 
+                    </a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" active href="/Facture/index.html">
+                    <i class="bi bi-person-circle"></i> 
+                    <span class="d-none d-lg-inline">Facture</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50 " href="/commande/index.html">
+                    <i class="bi bi-car-front"></i>
+                    <span class="d-none d-lg-inline">commande</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="/Suivi/index.html">
+                    <i class="bi bi-bag"></i>
+                    <span class="d-none d-lg-inline">Suivi </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="/serviceClient/index.html" style="background-color:#e7f9fd; border-radius: 5px;">
+                    <i class="bi bi-chat-text"></i>
+                   <span class="d-none d-lg-inline">Service Client </span>
+                </a>
+              </li>
+              <div class="u">
+            
+               <li class="nav-item">
+                 <a class="text-black-50 mt-5 text-nowrap ddd" href="/SettingCompte/index.html">
+                    <i class="bi bi-gear"></i>
+                    <span class="d-none d-lg-inline">Paramètre Compte</span>
+                 </a>
+               </li>
+          
+            <div class="re mt-3">
+              <li class="nav-item">
+                <a class="text-black-50 ddd " href="/connexion/connexion.html">
+                    <i class="bi bi-box-arrow-left"></i>
+                   <span class="d-none d-lg-inline"> Déconnexion</span>
+                </a>
+              </li>
+            </div>
+            </div> 
+              </div>
+         </div>
+
+         
+          <div class="container-fluid col">
+            <nav1 class="navbar rounded bg-light p-5">
+            <div class="position-absolute top-0 end-0 mt-2  navbarImg">
+                <i class="bi bi-bell p-3 fs-3 text-secondary" role="button"></i>
+                <img src="/SettingCompte/profile.png" class="myPhoto" alt="">
+            </div>
+
+         </nav1>
+            <div class="p-3 rounded bg-white mt-4 col-12 col-md-12 h-100 w-100 mx-auto col-sm-4 shadow-lg" style="height: 88vh !important; border: #0dc413 solid 3px; overflow-x: scroll;" >
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Sujet</label>
+                  <input type="email" class="form-control inputSujet bg-body-secondary text-info-emphasis" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+                      </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Messages</label>
+                      <textarea class="form-control textTeria bg-body-secondary text-info-emphasis" id="exampleFormControlTextarea1" rows="22" spellcheck="true"></textarea>
+                  </div>
+
+                <button type="submit" class="btn bg-info text-light col-12">Envoyer</button>
+              </form>
+          
+            </div>
+            </div>
+            </div>  
+        <script src="app.js"></script>  
+</body>
+</html> 

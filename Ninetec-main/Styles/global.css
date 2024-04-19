@@ -1,0 +1,189 @@
+body{
+    /* height: 100vh; */
+    /* margin-top: 500px; */
+    justify-content: center;
+    text-align: center;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* Navbar */
+#NAV:hover{
+    background-color:rgb(6, 42, 97) ;
+ }
+.bottomnav {
+  margin-top: 62px;
+}
+/* Navbar */
+/* ================ social média ================ */
+.social{
+    z-index: 1000;
+    width: 3.5rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0%;
+    top: 25%;
+    background: rgba(92, 153, 245, 0.856);
+}
+.social ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.social ul li {
+    display: flex;
+    margin-top: 2.5rem;
+}
+.social ul li a i:hover {
+   color:rgb(6, 42, 97);
+}
+.social ul li a i{
+color:#fff ;
+}
+
+/* ================ social média ================ */
+/* ==================footer====================== */
+footer {
+    background-color:rgb(6, 42, 97);
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(92, 153, 245, 0.856);
+    
+}
+
+.footer-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+}
+
+.footer-list li {
+    margin-right: 20px;
+   
+}
+.footer-list li a {
+    color:rgb(6, 42, 97) ;
+   
+}
+
+footer p {
+   margin: 0; 
+   margin-top: 20px;
+   padding-bottom: 20px;
+   color: #fff;
+}
+
+@media screen and (max-width:390px) {
+    body{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .footer-list {
+        width: 330px;
+        display: none;
+    }
+}
+
+/* ======================== footer ================== */
+  /* ================ Baniere ================*/
+.progressCenter{
+    position: relative;
+    left: 45%;
+    top: 10%;
+}
+
+  .baniere{
+    /* margin-top: 8rem; */
+}
+
+  .hero{
+    height: 50vh;
+    width: 100%;
+    background:url(/Images/hebergementC.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+ 
+.content{
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    transform: translateY(-50%);
+    font-family: sans-serif;
+
+}
+.baniere h4{
+    color: white;
+    margin: 20px 0 20px;
+    font-size: 75px;
+}
+
+.newltter form{
+    width: 380px;
+    max-height: 100%;
+    position: relative;
+
+}
+.progress{
+    width: 140px;
+    height: 6px;
+    background-image: linear-gradient(150deg, #9933BB, #7FBFE3);
+}
+.pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: 3em;
+    background-color: #9933bb8e;
+    gap: 1rem;
+    border-radius: 8px;
+}
+.pages a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.baniere a h6{
+    background: -webkit-linear-gradient(150deg, #4ec074, #6ac0f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    font-size: 17px;
+}
+.baniere span{
+    background: -webkit-linear-gradient(150deg, #80FFE5, #311DA6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #b6f105;
+    font-size: 30px;
+}
+.imgPolitique img{
+    background-size: contain;
+    background-position: center;
+    object-fit: cover;
+}
+
+  /* ================ Baniere ================*/
+
+  .title ,.BtnEnvoyer{
+    margin: auto; 
+    justify-content: center;
+    height: 3.5rem;;
+    border-radius: 5px;
+    color: #fff;
+     background: rgb(6,42,97);
+     background: -webkit-linear-gradient(180deg, hsla(216, 88%, 20%, 1) 0%, hsla(216, 84%, 54%, 1) 80%);
+ }

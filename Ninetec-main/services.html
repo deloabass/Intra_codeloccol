@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <title>Services</title>
+    <link rel="stylesheet" href="Styles/global.css">
+    <link rel="stylesheet" href="Styles/services.css">
+    <!-- <link rel="stylesheet" href="Styles/home.css"> -->
+
+</head>
+
+<body>
+    <!-- =================navbar=================== -->
+    <div id="NAV">
+        <nav class="navbar topnav fixed-top navbar-expand-lg transparent border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img width="100" height="35" src="Images/ninetec.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <div class="d-flex flex-column w-100">
+                        <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active border-start" aria-current="page"
+                                    href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="support.html">Support</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link border-start" aria-current="page" href="login.html">
+                                    Login
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav me-md-auto mb-2 mb-lg-0 justify-content-md-between">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">
+                                    <i class="fa-solid fa-house"></i>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="about.html">About</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="features.html">Features</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="#">Client espace</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="carriere.html">Carriere</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link border-start" aria-current="page" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- =================navbar=================== -->
+    <section class="reseauSociaux">
+        <div class="container social">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook fa-beat fa-2xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter fa-beat fa-2xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin-in fa-beat fa-2xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram fa-beat fa-2xl"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===================== Baniere ================= -->
+    <section class="baniere">
+        <div class="hero">
+            <div class="content">
+                <h4 class="text-info">Services</h4>
+                <!-- <h4>Détails</h4> -->
+                <div class="newltter">
+                    <div class="progress"></div><br>
+                    <div class="pages">
+                        <a href="">Home</a><span> -</span>
+                        <a href="">
+                            <h6>Service</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== Baniere ================= -->
+
+    <!-- ================ main ========== -->
+
+<!--     <section class="NosServices">
+        <div class="container">
+            <div class="row">
+            </div>
+            <div class="row mb-5 cardsServices">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h2>Nos Services</h2>
+
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-between cardsServicesFirst">
+                    <div class="col-12 col-md-3">
+                        <div class="card NosServicesCard col-11">
+                            <img src="Images/profil1.avif" class="card-img-top" alt="...">
+
+                            <div class="card-body text-center">
+                                <p class="card-text mt-5">Some quick example text to build on the card title and make up
+                                    the bulk</p>
+                            </div>
+                            <div class="card-Seemore d-flex justify-content-center mb-3 w-75 m-auto">
+                                <a class="" href=""><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card NosServicesCard col-11">
+                            <img src="Images/profil2.png" class="card-img-top" alt="...">
+
+                            <div class="card-body text-center">
+                                <p class="card-text mt-5">Some quick example text to build on the card title and make up
+                                    the bulk</p>
+                            </div>
+                            <div class="card-Seemore d-flex justify-content-center mb-3 w-75 m-auto">
+                                <a class="" href=""><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card NosServicesCard col-11">
+                            <img src="Images/profil1.avif" class="card-img-top" alt="...">
+
+                            <div class="card-body text-center">
+                                <p class="card-text mt-5">Some quick example text to build on the card title and make up
+                                    the bulk</p>
+                            </div>
+                            <div class="card-Seemore d-flex justify-content-center mb-3 w-75 m-auto">
+                                <a class="" href=""><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card NosServicesCard col-11">
+                            <img src="Images/profil2.png" class="card-img-top" alt="...">
+
+                            <div class="card-body text-center">
+                                <p class="card-text mt-5">Some quick example text to build on the card title and make up
+                                    the bulk</p>
+                            </div>
+                            <div class="card-Seemore d-flex justify-content-center mb-3 w-75 m-auto">
+                                <a class="" href=""><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cardsServices">
+                <div class="col-12 d-flex justify-content-between cardsServicesSecond">
+                    <div class="col-12 col-md-3">
+                        <div class="card DiffService col-11 ">
+                            <img src="Images/fornisseur.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body text-center">
+                                <h4>FAI</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                            </div>
+                            <div class="card-link d-flex justify-content-center w-75 m-auto">
+                                <a class="btn btn-secondary mb-3" href="">voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-3">
+                        <div class="card DiffService col-11">
+                            <img src="Images/developpeur.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body text-center">
+                                <h4>DEV</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                            </div>
+                            <div class="card-link d-flex justify-content-center w-75 m-auto">
+                                <a class="btn btn-secondary mb-3" href="">voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <div class="card DiffService col-11">
+                            <img src="Images/farmation.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body text-center">
+                                <h4>Formation</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                            </div>
+                            <div class="card-link d-flex justify-content-center w-75 m-auto">
+                                <a class="btn btn-secondary mb-3" href="">voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-3">
+                        <div class="card DiffService col-10">
+                            <img src="Images/hebergement.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body text-center">
+                                <h4>Hebergement</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                            </div>
+                            <div class="card-link d-flex justify-content-center w-75 m-auto">
+                                <a class="btn btn-secondary mb-3" href="">voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+       </div>
+    </section>
+ -->
+ <section class="container NosServices">
+    <div class="progress progressCenter mt-5"></div><br>
+    <div class="container">
+        <div class="row mb-5 mt-5">
+            <div class="col-12  col-md-6 col-lg-3">
+                <div class="d-flex justify-content-center w-100">
+                    <div class=" d-flex align-items-center justify-content-center divSerImg">
+                        <img class="SerImg" src="Images/FAIC.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="card DiffService">
+                    <div class="card-body text-center mt-5">
+                        <h3 class="card-title h-25">F.A.I</h3>
+                        <p class="card-text text-justify">Facile à utiliser, dessinez de manière transparente des
+                            idées longues et percutantes sur le tableau blanc.</p>
+                    </div>
+                    <div class="d-flex justify-content-center mb-2 w-100">
+                        <div class="seemore d-flex align-items-center justify-content-center">
+                            <a href="internet.html"><i class="fa-solid fa-plus fa-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-3 ">
+                <div class="d-flex justify-content-center w-100">
+                    <div class=" d-flex align-items-center justify-content-center divSerImg">
+                        <img class="SerImg" src="Images/DEVC.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="card DiffService">
+                    <div class="card-body text-center mt-5">
+                        <h3 class="card-title h-25">Développement</h3>
+                        <p class="card-text text-justify">Facile à utiliser, dessinez de manière transparente des
+                            idées longues et percutantes sur le tableau blanc.</p>
+                    </div>
+                    <div class="d-flex justify-content-center mb-2 w-100">
+                        <div class="seemore d-flex align-items-center justify-content-center">
+                            <a href="dev.html"><i class="fa-solid fa-plus fa-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-3 ">
+                <div class="d-flex justify-content-center w-100">
+                    <div class=" d-flex align-items-center justify-content-center divSerImg">
+                        <img class="SerImg" src="Images/formationC.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="card DiffService">
+                    <div class="card-body text-center mt-5">
+                        <h2 class="card-title h-25">Formation</h2>
+                        <p class="card-text text-justify">Facile à utiliser, dessinez de manière transparente des
+                            idées longues et percutantes sur le tableau blanc.</p>
+                    </div>
+                    <div class="d-flex justify-content-center mb-2 w-100">
+                        <div class="seemore d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-plus fa-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-3">
+                <div class="d-flex justify-content-center w-100">
+                    <div class=" d-flex align-items-center justify-content-center divSerImg">
+                        <img class="SerImg" src="Images/hebergementC.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="card DiffService">
+                    <div class="card-body text-center mt-5">
+                        <h2 class="card-title h-25">Hebergement</h2>
+                        <p class="card-text text-justify">Facile à utiliser, dessinez de manière transparente des
+                            idées longues et percutantes sur le tableau blanc.</p>
+                    </div>
+                    <div class="d-flex justify-content-center mb-2 w-100">
+                        <div class="seemore d-flex align-items-center justify-content-center">
+                           <a href="hebergement.html"> <i class="fa-solid fa-plus fa-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-12  col-md-6 col-lg-3">
+                <div class="d-flex justify-content-center w-100">
+                    <div class="topCard d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fs-1 fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="card NosServicesCard">
+                    <div class="card-body text-center mt-5">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="d-flex justify-content-center mb-2 w-100">
+                        <div class="seemore d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fs-3 fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-3">
+                <div class="d-flex justify-content-center w-100">
+                    <div class="topCard d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fs-1 fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="card NosServicesCard">
+                    <div class="card-body text-center mt-5">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="d-flex justify-content-center mb-2 w-100">
+                        <div class="seemore d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fs-3 fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-3">
+                <div class="d-flex justify-content-center w-100">
+                    <div class="topCard d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fs-1 fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="card NosServicesCard">
+                    <div class="card-body text-center mt-5">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="d-flex justify-content-center mb-2 w-100">
+                        <div class="seemore d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fs-3 fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-3">
+                <div class="d-flex justify-content-center w-100">
+                    <div class="topCard d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fs-1 fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="card NosServicesCard">
+                    <div class="card-body text-center mt-5">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="d-flex justify-content-center mb-2 w-100">
+                        <div class="seemore d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fs-3 fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+ 
+
+<section class="container bodyProgr">
+    <div class="container-fluid">
+        <div class="row">
+          
+                <div class="service__details__content col-12 mb-5">
+                    <div class="background1"></div>
+                    <h2 class="section-title-main titre">Cloud Hosting Solution</h2>
+                    <p>Quickly integrate client-centered users through vertical data. Holisticly repurpose
+                        interactive expertise after distinctive resources. Collaboratively engineer
+                        prospective imperatives with transparent technology. Phosfluorescently morph
+                        excellent materials for multifunctional collaboration and idea-sharing. Continually
+                        innovate maintainable e-commerce without future-proof relationships.</p>
+                    <div class="service__img__box mb-4 col-8">
+                        <img class="img-fluid" src="Images/host.jpeg" alt="service">
+                    </div>
+                    <p>Quickly integrate client-centered users through vertical data. Holisticly repurpose
+                        interactive expertise after distinctive resources. Collaboratively engineer
+                        prospective
+                        imperatives with transparent technology. Phosfluorescently morph excellent materials
+                        for
+                        multifunctional collaboration and idea-sharing. Continually innovate maintainable
+                        e-commerce without future-proof relationships.</p>
+                    <p>Quickly integrate client-centered users through vertical data. Holisticly repurpose
+                        interactive expertise after distinctive resources. Collaboratively engineer
+                        prospective imperatives with transparent .</p>
+
+                    <h3 class="semi__title mb-3 titre">We Provide Services that You can Rely on</h3>
+                    <p>Quickly integrate client-centered users through vertical data. Holisticly repurpose
+                        interactive expert after distinctive resources. Collaboratively engineer prospective
+                        imperatives with transparent technology. Phosfluorescently morph excellent
+                        materials.</p>
+
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="service__img__box mb-30">
+                                <img class="w-100" src="Images/formationC.jpg" alt="service">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="service__video text-center mb-30">
+                                <img class="w-100"
+                                    src="Images/FAIC.jpg"
+                                    alt="service">
+                                <a class="popup-video" href="https://www.youtube.com/watch?v=lTxn2BuqyzU"><i
+                                        class="bi bi-play-fill"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="service__img__box mb-30">
+                                <img class="w-100" src="Images/DEVC.jpg" alt="service">
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="text-list-two list-none liste1">
+                        <li>Collaboratively engineer prospective imperatives with transparent technology.
+                        </li>
+                        <li>Phosfluorescently morph excellent materials for multifunctional collaboration
+                            idea.</li>
+                        <li>Conveniently cultivate compelling processes before client-centered networks.
+                        </li>
+                    </ul>
+                    <h3 class="semi__title titre mb-2 mt-2">Our Specialized</h3>
+                    <p>Quickly integrate client-centered users through vertical data. Holisticly repurpose
+                        interactive expertise after distinctive resources. Collaboratively engineer
+                        prospective imperatives with transparent .</p>
+                    
+                        <div class="row gx-lg-2 progressbar-wrapper mb-1">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="progressbar__content text-center mb-45">
+                                    <div class="chart progress-bar html" data-percent="92">
+                                        <span>92%</span>
+                                        <canvas height="280" width="280"
+                                            style="height: 140px; width: 140px;"></canvas>
+                                    </div>
+                                    <h4 class="progress__title">Web Security</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="progressbar__content text-center mb-45">
+                                    <div class="chart progress-bar css" data-percent="87">
+                                        <span>87%</span>
+                                        <canvas height="280" width="280"
+                                            style="height: 140px; width: 140px;"></canvas>
+                                    </div>
+                                    <h4 class="progress__title">Privacy &amp; Policy</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="progressbar__content text-center mb-45">
+                                    <div class="chart progress-bar js" data-percent="73">
+                                        <span>73%</span>
+                                        <canvas height="280" width="280"
+                                            style="height: 140px; width: 140px;"></canvas>
+                                    </div>
+                                    <h4 class="progress__title">Data Security</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="progressbar__content text-center mb-45">
+                                    <div class="chart progress-bar js" data-percent="80">
+                                        <span>80%</span>
+                                        <canvas height="280" width="280"
+                                            style="height: 140px; width: 140px;"></canvas>
+                                    </div>
+                                    <h4 class="progress__title">Host Solution</h4>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+           
+
+        </div>
+    </div>
+</section>
+ 
+ <!-- ================ main ========== -->
+
+    <!-- =============== Footer ============== -->
+    <footer class="fixed-bottom mt-5">
+        <div class="footer-list">
+            <ul class=" d-flex  mb-2 mb-lg-0 justify-content-md-between">
+                <li class="link">
+                    <a class="text-decoration-none" aria-current="page" href="#"> Home</a>
+                </li>
+                <li class="link">
+                    <a class="text-decoration-none" aria-current="page" href="#">About</a>
+                </li>
+                <li class="link">
+                    <a class="text-decoration-none" aria-current="page" href="#">Features</a>
+                </li>
+                <li class="link">
+                    <a class="text-decoration-none" aria-current="page" href="#">Client espace</a>
+                </li>
+                <li class="link">
+                    <a class="text-decoration-none" aria-current="page" href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p class="text-center">© Copyright 2024 - Ninetec</p>
+        </div>
+    </footer>
+    <!-- =============== Footer ============== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="Script/index.js"></script>
+
+</body>
+
+</html>

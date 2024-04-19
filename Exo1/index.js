@@ -1,5 +1,5 @@
 // 1.
-    let body = document.body;
+let body = document.body;
     body.firstElementChild.textContent = 'Rick Astley - Never Gonna Give You Up';
 // 2.
 const element = document.getElementsByClassName('couplet');
@@ -10,7 +10,7 @@ for (let i = 0; i < element.length; i++) {
 // 3.
 let refrain = document.querySelectorAll('.refrain');
     refrain.forEach(element => {
-       let a = element.innerHTML.replace(/<br\/>/g).split("<br>")
+        let a = element.innerHTML.replace(/<br\/>/g).split("<br>");
     
         let tableau = [];
         let ensemble = new Set();

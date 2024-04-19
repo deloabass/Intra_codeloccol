@@ -1,0 +1,256 @@
+
+:root{
+    --mainPink: #ef7998;
+    --mainYellow: rgb(249, 228, 148);
+    --mainWhite: #FFF;
+    --mainBlack: #000;
+    --yellowTrans: rgba(249, 228, 148, 0.5);
+    --mainGrey: rgb(238, 228, 238);
+}
+
+body{
+    font-family: "kaushan Script", cursive;
+    background: var(--mainWhite);
+    color: var(--mainBlack);
+}
+/* global styles */
+.btn-pink{
+    color: var(--mainPink)!important;
+    border-color: var(--mainPink)!important;
+}
+.btn-black{
+    color: var(--mainBlack)!important;
+    border-color: var(--mainBlack)!important;
+}
+.btn-black:hover{
+    color: var(--mainPink)!important;
+    background: var(--mainBlack)!important;
+}
+.btn-pink:hover{
+    color: var(--mainBlack)!important;
+    background: var(--mainPink)!important;
+}
+/* nav link */
+.navbar-toggler{
+    outline: none !important;
+}
+.toggler-icon{
+    font-size: 1rem; 
+    color: var(--mainPink);
+}
+.nav-link{
+    color: var(--mainPink);
+    transition: all 1s ease-in-out;
+    font-size: 2.5rem;
+}
+.nav-link:hover{
+    color: var(--mainBlack);
+}
+/* button item css */
+.cart-info_icon{
+    color: var(--mainBlack);
+    cursor: pointer;
+}
+.cart-info{
+    border: 0.1rem solid var(--mainBlack);
+    color: var(--mainBlack);
+    border-radius: 0.25rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+}
+.cart-info:hover{
+    background: var(--mainPink);
+    border-color: var(--mainPink);
+    color: var(--mainWhite);
+}
+.cart-info:hover .cart-info_icon{
+    color: var(--mainWhite);
+}
+/* container-fluid */
+.max-height{
+    min-height:calc(100vh - 76px);
+    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url(./imagCart/Cookies-and-Cream-Cupcakes-FI.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner{
+    color: var(--mainWhite);
+    margin-top: -4rem;
+}
+.tanner-title{
+    color: var(--mainPink);
+    font-size: 4rem;
+}
+.banner-link{
+    font-size: 1.5rem;
+    color: var(--mainBlack);
+    border: 0.2rem solid var(--mainBlack);
+}
+.banner-link:hover{
+    background: var(--mainBlack);
+    color: var(--mainPink);
+}
+/* about section */
+.about-img_container{
+    position: relative;
+    cursor: pointer;
+}
+.about-img_container::before{
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid  var(--mainYellow);
+    z-index: -1;
+    transition: all 0.1s linear;
+}
+.about-img_container:hover::before{
+    top: 0;
+    left: 0;
+}
+.store{
+    background: var(--mainGrey);
+}
+.search-box{
+    background: var(--mainPink);
+    color: var(--mainBlack);
+    height: 45px;
+}
+/* card store css */
+.single-item{
+    position: relative;
+    transition: all 0.3s linear;
+}
+.single-item:hover{
+   box-shadow: 0 10px 15px rgb(0, 0, 0);
+  
+}
+.img-container{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-container:hover .store-img{
+    transform: scale(1.2);
+}
+.store-img{
+    transition: all 1s ease-in-out;
+}
+.store-item-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.95rem;
+    background: var(--mainYellow);
+    border-top-left-radius: 2rem;
+    transition: all 1s ease-in-out;
+    transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon{
+    transform: translate(0, 0);
+}
+.store-item-icon:hover{
+    color: var(--mainWhite);
+}
+#item-img{
+    width: 50px;
+    height: 50px;
+}
+.cart{
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    background: var(--mainWhite);
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    overflow-x: scroll;
+    width: 0;
+    height:0;
+    z-index: 10000;
+}
+.show-cart{
+    width: 18rem;
+    padding: 2rem 0.17rem;
+    transform: rotateY(-360deg);
+    height: auto;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+.cart-item-remove{
+    color: var(--mainPink);
+    transition: all 1s ease-in-out;
+}
+.cart-item{
+    transition: all 2s ease-in-out;
+}
+.cart-item-remove:hover{
+    transform: scale(1.1);
+    color: var(--mainBlack);
+}
+.cart-item-price{
+    font-size: 0.8rem;
+}
+.hidden{
+    display: none;
+}
+/* lien du vidéo de c'est code https: //youtu.be/iggMxE7y6Uk?si=HZ84qnUlXraP337s 2:02:03 / 3:12:06 */
+.iconStar{
+    position: relative;
+    user-select: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 1rem;
+    margin: 2px;
+    /*  animation: star .5s infinite ;*/
+
+}
+.iconStar button{
+    position: relative;
+    margin: 2px;
+    font-size: 1.0em;
+    cursor: pointer;
+    color: #ef7998;
+    background-color: unset;
+}
+.ajouter{
+    display: none !important;
+}
+.notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 19em;
+    color: #000;
+    background: #D4F5FC;
+    border-radius: 5px;
+    transition: all 2s ease-in-out;
+    right:10px;
+    padding: 10px;
+    z-index: 10000;
+   
+
+}
+.notification p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+.notification i{
+    color: #2acdf2;
+}
+
+
+
+

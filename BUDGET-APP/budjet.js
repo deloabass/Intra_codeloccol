@@ -34,16 +34,20 @@ reset_Buttone.addEventListener('click', function() {
   document.location.reload();
 });
 //Ajoute le localStorage du budget
+
 let budget = 0;
 if (!localStorage.getItem("budget")) {
   localStorage.setItem("budget", JSON.stringify(budget));
 }//mise à jour de localStorage de budget
-budget = JSON.parse(localStorage.getItem('budget'))
+budget = JSON.parse(localStorage.getItem('budget'));
+
+
 let showExpense = 0;
 if (!localStorage.getItem("showExpense")) {
   localStorage.setItem("showExpense", JSON.stringify(showExpense));
 }//mise à jour de localStorage de budget
 showExpense = JSON.parse(localStorage.getItem('showExpense'))
+
 //Ajoute le localStorage du balance
 let balance = 0;
 if (!localStorage.getItem("balance")) {
@@ -51,6 +55,7 @@ if (!localStorage.getItem("balance")) {
 }//mise à jour de localStorage de balance
 balance = JSON.parse(localStorage.getItem('balance'))
 //Ajoute le localStorage du table push
+
 let array = [];
 if (!localStorage.getItem("arrayExpense")) {
   localStorage.setItem("arrayExpense", JSON.stringify(array));
@@ -142,11 +147,11 @@ function afficheHistory() {
     <tr>
     <td>${index + 1}</td>
     <td>${element.text}</td>
-    <td>${element.numbre +" F"}</td>
+    <td>${element.numbre + " F"}</td>
     <div class="ligne"></div>
     </tr>
     
-    `
+    `;
 
   })
 }
@@ -167,7 +172,7 @@ botton_expence.addEventListener("click", function () {
     );
     const valeur = {
       text: input_deux_screen.value,
-      numbre: input_trois_screen.value,
+      numbre: input_trois_screen.value
     };
     array.push(valeur);
     localStorage.setItem("arrayExpense", JSON.stringify(array));
@@ -205,31 +210,32 @@ expense.forEach(element => {
   total = total + parseInt(element.numbre); 
 });
 showExpense = total;
-localStorage.setItem("showExpense", JSON.stringify(showExpense))
+  localStorage.setItem("showExpense", JSON.stringify(showExpense));
 numberRouge.textContent = showExpense + " F";
 }
 expense()
+
 function creatColor() {
-  let color = "0123456789ABCDEF"
+  let color = "0123456789ABCDEF";
   let htag = "#";
+  console.log(htag);
   for (let i = 0; i < 6; i++) {
-    htag += color[Math.floor(Math.random() * 16)]
+    htag += color[Math.floor(Math.random() * 16)];
   }
   return htag;
-  
 }
  /* ====================================colone troix====== */
 //// chart 
 document.addEventListener("DOMContentLoaded", function(){
     const ctx = document.getElementById("myChart");
-let varChart =  new Chart(ctx, {
+    let varChart =  new Chart(ctx, {
     type: "doughnut",
     data: {
       labels: [
     ],
       datasets: [
         {
-          label: "# of Votes",
+          // label: "# of Votes",
           data: [ 
           ],
           backgroundColor: [
@@ -246,11 +252,11 @@ function chartElement() {
   varChart.data.datasets[0].backgroundColor = [];
   arr.forEach((element) => {
     varChart.data.labels.push(element.text);
-    varChart.data.datasets[0].data.push(element.numbre)
+    varChart.data.datasets[0].data.push(element.numbre);
     varChart.data.datasets[0].backgroundColor.push(creatColor())
   })
 }
-chartElement()
+  chartElement();
 })
 
 

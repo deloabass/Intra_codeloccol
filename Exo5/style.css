@@ -27,7 +27,7 @@ nav ul li a:hover, .banner ul.list-unstyled li a:hover {
 }
 
 nav ul li a:active {
-  color: #E35F00 !important;
+  color: #e35f002f !important;
 }
 
 .banner {
@@ -45,6 +45,7 @@ nav ul li a:active {
 .banner .picture img.img-fluid {
   height: calc(100vh - 55px) !important;
   width: 100% !important;
+  object-fit: cover;
 }
 
 .next {

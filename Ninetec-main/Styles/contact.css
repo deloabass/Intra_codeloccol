@@ -1,0 +1,25 @@
+
+.Contact-Utile{
+    margin-top: 7rem;
+    margin-bottom: 120px;
+}
+
+.baniere{
+    margin-top: 120px;
+}
+.numUtil h2{
+    color: rgb(6, 42, 97);
+}
+.numUtil p{
+    color: rgba(92, 153, 245, 0.856);
+}
+
+.lieuNinetec{
+    height: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;}
+
+.ContactBtn{
+    background-color: rgb(19, 130, 203) ;
+    color: white;
+}
+

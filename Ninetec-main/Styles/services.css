@@ -1,0 +1,201 @@
+/* ================ Nos Service ================ */
+.card{
+  box-shadow: none !important;
+}
+.seemore {
+  height: 4rem;
+  width: 4rem;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+.seemore:hover {
+ background: #fff;
+ color: rgb(6, 42, 97);
+}
+
+.DiffService{
+
+  border-radius: 10px;
+  height: 550px;
+  padding: 10px;
+  color: rgba(92, 153, 245, 0.856);
+  background: rgb(6, 42, 97);
+}
+.DiffService .card-body .card-title{
+  margin-top: 5rem;
+}
+.NosServicesCard .divIcon{
+  background: rgba(92, 153, 245, 0.856);
+  position: relative;
+  --top: -10%;
+  width: 5rem;
+  height: 7rem;
+  border-radius: 100%;
+  --border: 10px solid #fff;
+}
+.divIcon{
+  position: relative;
+  left: 35%;
+  --padding-top: 2rem;
+  margin-bottom: -35px;
+  border: 10px solid #fff;
+  z-index: 1000 !important;
+  border-radius: 100%;
+  width: fit-content;
+  padding: 15px;
+}
+.card-body{
+  margin-top: 15px;
+}
+
+.SerImg{
+  position: relative;
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: -8rem;
+  border-radius: 100%;
+  z-index: 2;
+  border: 10px solid rgba(92, 153, 245, 0.856);
+}
+
+.cBody{
+  margin-top: 50px !important;
+}
+.cBody p{
+  padding-top: 60px;
+}
+.card-Seemore a {
+  border: 2px solid #fff;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.card-Seemore a:hover {
+  background: white;
+}
+.voirPlus{
+width:10rem ;
+font-size: 1.5rem;
+background: rgba(92, 153, 245, 0.856);
+}
+.voirPlus:hover{
+width:10rem ;
+font-size: 1.5rem;
+background: #fff;
+color: rgb(6, 42, 97);
+}
+.divSerImg img{
+  object-fit: cover;
+}
+/* ================ Nos Service ================ */
+
+/* ================ bodyProgr ================ */
+.bodyProgr{
+  margin-bottom: 5rem !important;
+}
+.service__details__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.service__details__content p{
+  text-align: center;
+  width: 90% !important;
+}
+@property --progress-value {
+  syntax: '<integer>';
+  inherits: false;
+  initial-value: 0;
+}
+  
+@keyframes html-progress {
+  to { --progress-value: 92; }
+}
+  
+@keyframes css-progress {
+  to { --progress-value: 87; }
+}
+  
+@keyframes js-progress {
+  to { --progress-value: 73; }
+}
+.progress-bar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+margin: auto;
+  /* Center the percentage value horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.progress-bar span {
+  font-size: 2rem;
+  color: black;
+  margin-top: 8rem;
+}
+
+.liste1 li{
+  list-style-type: circle;
+}
+
+.titre{
+  padding: 5px;
+  justify-content: center;
+  border-radius: 5px;
+  color: #fff;
+  background: rgb(6,42,97);
+  background: -webkit-linear-gradient(180deg, hsla(216, 88%, 20%, 1) 0%, hsla(216, 84%, 54%, 1) 80%);
+}
+
+.html {
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(rgb(13, 66, 135) calc(var(--progress-value) * 1%), rgb(192, 205, 255) 0);
+  animation: html-progress 2s 1 forwards;
+}
+  
+.css {
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0),
+    conic-gradient(rgb(13, 66, 135) calc(var(--progress-value) * 1%), rgb(192, 205, 255) 0);
+  animation: css-progress 2s 1 forwards;
+}
+  
+.js {
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0),
+    conic-gradient(rgb(13, 66, 135) calc(var(--progress-value) * 1%), rgb(192, 205, 255) 0);
+  animation: js-progress 2s 1 forwards;
+}
+  
+.bodyProgr {
+  font-family: -apple-system, system-ui, Helvetica, Arial, sans-serif;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+}
+  
+  
+progress {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.background1{
+ position: fixed;
+ background-color: red;
+ width: 100%;
+ height: ;
+}
+/* ================ bodyProgr ================ */
+
+
+

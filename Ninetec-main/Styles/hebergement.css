@@ -1,0 +1,557 @@
+
+/* ======= baniere internet ===== */
+.hero-internet{
+    height: 50vh;
+    width: 100%;
+    background:url(/Images/FAIC.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.content {
+    right: -30% !important;
+}
+.content h4{
+    color: rgb(6, 42, 97)  !important;
+}
+/* ======= baniere internet ===== */
+/* ======= card avanyage ===== */
+.card{
+    box-shadow: none !important;
+}
+
+
+.seemore {
+    height: 4rem;
+    width: 4rem;
+    border: 2px solid white;
+    border-radius: 100%;
+ }
+.seemore:hover {
+   background: #fff;
+   color: rgb(6, 42, 97);
+ }
+
+ .topCard {
+    height: 6rem;
+    width: 6rem;
+    border: 5px solid white;
+    border-radius: 100%;
+    background: rgba(92, 153, 245, 0.856);
+    margin-bottom: -50px;
+    z-index: 2;
+}
+ .topCard i {
+  color: rgb(6, 42, 97);
+}
+
+.NosServicesCard{
+    border-radius: 10px;
+    height: 400px;
+    padding: 10px;
+    background: rgba(92, 153, 245, 0.856);
+    color: rgb(6, 42, 97);
+}
+
+.NosServicesCard::before{
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+.NosServicesCard:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: #fff;
+}
+.NosServicesCard::before{
+    content: " ";
+      display: block;
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      inset: 0 0 0 0;
+      background: black;
+      z-index: -1;
+      transition: transform .3s ease;
+}
+/* ======= card avanyage ===== */
+
+/* ========== Details Hebergement ========== */
+.title{
+    width: fit-content;
+    padding: 10px !important;
+}
+#hebergement {
+    text-align: center;
+    background: aliceblue;
+    margin-bottom: 7rem;
+}
+
+.longCards {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 35px;
+    color: #302a50;
+}
+
+#sousTitre,
+#sousTitre2 {
+    font-size: 25px;
+    color: #302a50;
+}
+/* ================== Select =============== */
+
+.select {
+    border: 2px solid rgb(0, 95, 177);
+    color: blue;
+    font-family: Sans-Serif;
+    font-size: 20px;
+    line-height: 30px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.select.open {
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+.select .option {
+    border: 1px solid black;
+}
+
+.select .option {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    display: none;
+    padding-left: 5px;
+    font-size: 15px;
+    /*Tamaño de fuente pequeño para la segunda línea*/
+    line-height: 20px;
+    color: #000;
+    border-top: none;
+}
+
+.select .option.shown:first-line {
+    /*Aquí sobreescribimos el tamaño del
+texto de la primera línea*/
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.select .option.shown:hover:first-line {
+    color: #000;
+}
+
+.select .shown {
+    /* position: relative; */
+    display: block;
+    border: 0px , 1px;
+}
+
+.select .option:hover {
+    background: #3355ff;
+    background: linear-gradient(hsl(220, 100%, 70%), hsl(220, 100%, 50%));
+}
+
+.select .option.shown:last-child {
+    border-radius: 0 0 5px 5px
+}
+
+input {
+    margin-top: 10px;
+}
+/* ================== Select =============== */
+/* 1er card */
+.emailP{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.stand {
+    border: 1px solid;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 1rem;
+    box-shadow: 10px 5px 5px rgb(201, 192, 192);
+    border-radius: 5px
+}
+
+hr {
+    width: 80%;
+}
+
+h2 {
+    color: #000080;
+    text-align: start;
+    margin-left: 3rem;
+}
+
+#pHeber {
+    text-align: start;
+    margin-left: 3rem;
+    font-size: 18px;
+    color: #302a50;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+    color: #000080;
+}
+
+.offer-price span{
+    font-size: 55px;
+    color: #000080;
+}
+
+#duree {
+    color: #000080;
+}
+
+#btnContinuer {
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    width: 80%;
+    height: 3rem;
+    font-size: 20px;
+    background-color: rgb(6, 42, 97);
+}
+
+#but {
+    color: #000080;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+    height: 3rem;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+
+
+.product-list {
+    
+    text-align: left;
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.product-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    font-size: 18px;
+    color: #000;
+
+}
+
+
+/* fin 1er card */
+/* 2ème card */
+#plus {
+    border: 1Px solid;
+    height: 79rem;
+    width: 18rem;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background: #000080;
+    box-shadow: 10px 5px 5px rgb(201, 192, 192);
+    border-radius: 5px
+}
+
+#plusVendu {
+    background-color: white;
+    color: #000080;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.separator {
+    margin-top: -12px !important;
+}
+
+#titrPlus {
+    color: white;
+}
+
+#pHeber2 {
+    text-align: start;
+    margin-left: 3rem;
+    font-size: 18px;
+    color: white;
+}
+
+#anciprix2 {
+    color: white;
+}
+
+#trois2 {
+    font-size: 55px;
+    color: white;
+}
+
+#duree2 {
+    color: white;
+}
+
+.button2 {
+    color: #000080;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    width: 80%;
+    height: 3rem;
+    font-size: 20px;
+    background-color: rgb(23, 237, 237);
+}
+
+.but2 {
+    color: #000080;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+    height: 3rem;
+    font-size: 20px;
+    background-color: white;
+}
+
+
+#avantage2 {
+    margin-left: 1rem;
+}
+
+.product-list2 {
+    text-align: start;
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.product-list2 li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    width: 80%;
+    color: white;
+
+}
+
+
+.product-icon2 {
+    margin-left: 15px;
+}
+
+.product-name2 {
+    flex-grow: 1;
+    margin-right: 18px;
+}
+
+/* fin 2è card */
+/* 3è card */
+#premi {
+    border: 1Px solid;
+    height: 80rem;
+    width: 18rem;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background: white;
+    margin-top: 1rem;
+    box-shadow: 10px 5px 5px rgb(201, 192, 192);
+    border-radius: 5px
+}
+
+
+#titrPlus {
+    color: white;
+}
+
+#pHeber3 {
+    text-align: start;
+    margin-left: 3rem;
+    font-size: 18px;
+    color: #302a50;
+}
+
+#anciprix3 {
+    color: #000080;
+}
+
+#trois3 {
+    font-size: 55px;
+    color: #000080;
+}
+
+#duree3 {
+    color: #000080;
+}
+
+.button3 {
+    color: #000080;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    width: 80%;
+    height: 3rem;
+    font-size: 20px;
+    background-color: rgb(23, 237, 237);
+}
+
+.but3 {
+    color: #000080;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+    height: 3rem;
+    font-size: 20px;
+    background-color: white;
+}
+
+
+
+
+.product-list3 {
+    text-align: start;
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.product-list3 li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    width: 80%;
+    color: white;
+
+}
+
+
+.product-icon3 {
+    margin-left: 15px;
+}
+
+.product-name3 {
+    flex-grow: 1;
+    margin-right: 18px;
+}
+
+/* fin 3è card */
+/* 4è card */
+#ultimate {
+    border: 1Px solid;
+    height: 83rem;
+    width: 18rem;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background: white;
+    margin-top: 1rem;
+    box-shadow: 10px 5px 5px rgb(201, 192, 192);
+    border-radius: 5px
+}
+
+#plusVendu {
+    background-color: white;
+    color: #000080;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#pHeber4 {
+    text-align: start;
+    margin-left: 3rem;
+    font-size: 18px;
+    color: #302a50;
+}
+
+#anciprix4 {
+    color: #000080;
+}
+
+#trois4 {
+    font-size: 55px;
+    color: #000080;
+}
+
+#duree4 {
+    color: #000080;
+}
+
+.button4 {
+    color: #000080;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    width: 80%;
+    height: 3rem;
+    font-size: 20px;
+    background-color: rgb(23, 237, 237);
+}
+
+.but4 {
+    color: #000080;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+    height: 3rem;
+    font-size: 20px;
+    background-color: white;
+}
+
+.host-active{
+    background:rgba(92, 153, 245, 0.856);
+}
+
+.product-list4 {
+    text-align: start;
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.product-list4 li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    width: 80%;
+    color: #000080;
+
+}
+
+
+.product-icon4 {
+    margin-left: 15px;
+}
+
+.product-name4 {
+    flex-grow: 1;
+    margin-right: 18px;
+}
+
+
+
+/* ========== Details Hebergement ========== */
